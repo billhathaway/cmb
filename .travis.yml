@@ -3,3 +3,4 @@ services:
   - redis-server
   - cassandra
 before_script: cassandra-cli -f schema/cassandra_1.2.schema && bin/cmb.sh
+install: bin/travisci_setup
