@@ -2,5 +2,5 @@ language: java
 services:
   - redis-server
   - cassandra
-before_script: cassandra-cli -f schema/cassandra_1.2.schema && bin/cmb.sh
+before_script: cassandra-cli -f schema/cassandra_1.2.schema
 install: bin/travisci_setup.sh
